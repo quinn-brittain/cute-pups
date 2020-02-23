@@ -1,6 +1,8 @@
 package com.elisofett.cutepups;
 
+import com.elisofett.cutepups.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -30,4 +32,6 @@ public class CutePups {
 
     }
 
+    @SidedProxy(serverSide = "com.elisofett.cutepups.proxy.CommonProxy", clientSide = "com.elisofett.cutepups.proxy.ClientProxy")
+    public static CommonProxy proxy;
 }
