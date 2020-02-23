@@ -8,8 +8,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = CutePups.modId, name = CutePups.name, version = CutePups.version)
 public class CutePups {
 
-    public static final String modId = "tutorial";
-    public static final String name = "Tutorial Mod";
+    public static final String modId = "cutepups";
+    public static final String name = "Cute Pups";
     public static final String version = "1.0.0";
 
     @Mod.Instance(modId)
