@@ -10,7 +10,7 @@ public class CutePups {
 
     public static final String modId = "cutepups";
     public static final String name = "Cute Pups";
-    public static final String version = "1.0.0";
+    public static final String version = "0.5.0";
 
     @Mod.Instance(modId)
     public static CutePups instance;
