@@ -1,6 +1,6 @@
-package com.elisofett.cutepups.proxy;
+package net.elisofett.cutepups.proxy;
 
-import com.elisofett.cutepups.CutePups;
+import net.elisofett.cutepups.CutePups;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;

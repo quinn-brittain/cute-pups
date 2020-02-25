@@ -1,4 +1,4 @@
-package com.elisofett.cutepups.proxy;
+package net.elisofett.cutepups.proxy;
 
 import net.minecraft.item.Item;
 
