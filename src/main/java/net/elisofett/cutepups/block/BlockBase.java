@@ -1,11 +1,11 @@
-package com.elisofett.cutepups.block;
+package net.elisofett.cutepups.block;
 
+import net.elisofett.cutepups.CutePups;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.shadowfacts.tutorial.TutorialMod;
 
 public class BlockBase extends Block {
 
@@ -15,13 +15,13 @@ public class BlockBase extends Block {
         super(material);
 
         this.name = name;
-        setUnlocalizedName(TutorialMod.modId + "." + name);
+        setUnlocalizedName(CutePups.modId + "." + name);
         setRegistryName(name);
-        setCreativeTab(TutorialMod.creativeTab);
+        setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
     }
 
     public void registerItemModel(Item itemBlock) {
-        TutorialMod.proxy.registerItemRenderer(itemBlock, 0, name);
+        CutePups.proxy.registerItemRenderer(itemBlock, 0, name);
     }
 
     public Item createItemBlock() {
