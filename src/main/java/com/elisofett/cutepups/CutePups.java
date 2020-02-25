@@ -1,5 +1,6 @@
 package com.elisofett.cutepups;
 
+import com.elisofett.cutepups.item.ModItems;
 import com.elisofett.cutepups.proxy.CommonProxy;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
