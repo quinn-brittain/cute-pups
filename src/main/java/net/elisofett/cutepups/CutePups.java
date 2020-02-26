@@ -1,7 +1,9 @@
 package net.elisofett.cutepups;
 
+import net.elisofett.cutepups.block.ModBlocks;
 import net.elisofett.cutepups.item.ModItems;
 import net.elisofett.cutepups.proxy.CommonProxy;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -37,19 +39,27 @@ public class CutePups {
 
     }
 
-    @SidedProxy(serverSide = "com.elisofett.cutepups.proxy.CommonProxy", clientSide = "com.elisofett.cutepups.proxy.ClientProxy")
+    @SidedProxy(serverSide = "net.elisofett.cutepups.proxy.CommonProxy", clientSide = "net.elisofett.cutepups.proxy.ClientProxy")
     public static CommonProxy proxy;
 
     @Mod.EventBusSubscriber
     public static class RegistrationHandler {
 
         @SubscribeEvent
+        public static void registerBlocks(RegistryEvent.Register<Block> event) {
+            ModBlocks.register(event.getRegistry());
+        }
+
+        @SubscribeEvent
         public static void registerItems(RegistryEvent.Register<Item> event) {
             ModItems.register(event.getRegistry());
+            ModBlocks.registerItemBlocks(event.getRegistry());
         }
+
         @SubscribeEvent
         public static void registerItems(ModelRegistryEvent event) {
             ModItems.registerModels();
+            ModBlocks.registerModels();
         }
     }
 }

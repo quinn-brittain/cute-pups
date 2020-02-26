@@ -6,22 +6,22 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
 
-    public static BlockBowl foodBowl = new BlockBowl("food_bowl");
+    public static BlockBowl dogBowl = new BlockBowl("food_bowl");
 
     public static void register(IForgeRegistry<Block> registry) {
         registry.registerAll(
-                foodBowl
+                dogBowl
         );
     }
 
     public static void registerItemBlocks(IForgeRegistry<Item> registry) {
         registry.registerAll(
-                foodBowl.createItemBlock()
+                dogBowl.createItemBlock()
         );
     }
 
     public static void registerModels() {
-        foodBowl.registerItemModel(Item.getItemFromBlock(foodBowl));
+        dogBowl.registerItemModel(Item.getItemFromBlock(dogBowl));
     }
 
 }
