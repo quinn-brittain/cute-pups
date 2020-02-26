@@ -1,4 +1,4 @@
-package com.elisofett.cutepups.item;
+package net.elisofett.cutepups.item;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
