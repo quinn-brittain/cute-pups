@@ -6,7 +6,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
 
-    public static BlockBowl dogBowl = new BlockBowl("food_bowl");
+    public static BlockBowl dogBowl = new BlockBowl("dog_bowl");
 
     public static void register(IForgeRegistry<Block> registry) {
         registry.registerAll(

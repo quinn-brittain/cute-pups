@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "cutepups:blocks/bottom",
-		"2": "cutepups:blocks/top",
-		"3": "cutepups:blocks/side",
-		"4": "cutepups:blocks/inside",
-		"particle": "models/food_bowl"
+		"0": "cutepups:blocks/dogbowl/bottom",
+		"2": "cutepups:blocks/dogbowl/top",
+		"3": "cutepups:blocks/dogbowl/side",
+		"4": "cutepups:blocks/dogbowl/inside",
+		"particle": "cutepups:blocks/dogbowl/inside"
 	},
 	"elements": [
 		{
