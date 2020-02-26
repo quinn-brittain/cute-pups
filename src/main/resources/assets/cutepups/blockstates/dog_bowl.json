@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": {
+      "model": "cutepups:dog_bowl"
+    },
+    "inventory": {
+      "model": "cutepups:dog_bowl",
+      "transform": "forge:default-block"
+    }
+  }
+}
